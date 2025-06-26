@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Suvarna Yarramreddy | Portfolio</title>
+  <style>
+    :root {
+      --primary: #f5f5f5;
+      --accent: #FFD700;
+      --bg: #000000;
+      --card: #111111;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: var(--bg);
+      color: var(--primary);
+      line-height: 1.6;
+    }
+
+   header {
+  padding: 50px 20px 20px;
+  text-align: center;
+  background-color: var(--card);
+  border-bottom: 4px solid var(--accent); /* Increased from 2px to 4px */
+}
+
+  header h1 {
+  font-size: 2.8em;
+  font-weight: bold;
+  margin-bottom: 10px;
+  background: linear-gradient(90deg, #FFD700, #ffffff, #FFD700);
+  background-size: 200% auto;
+
+  /* Required together */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  animation: shine 3s linear infinite, bounceText 2s ease-in-out infinite;
+}
+  html {
+    scroll-behavior: smooth;
+  }
+
+
+@keyframes bounceText {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-5px); }
+}
+
+@keyframes shine {
+  0% { background-position: 0% center; }
+  100% { background-position: 200% center; }
+}
+
+    .social-links {
+      margin-top: 10px;
+    }
+
+    .social-links a {
+      margin: 0 10px;
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1rem;
+    }
+
+    nav {
+      background: #0f0f0f;
+      padding: 12px;
+      text-align: center;
+      border-bottom: 1px solid #222;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    nav a {
+      margin: 0 15px;
+      color: var(--primary);
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      color: var(--accent);
+    }
+
+    section {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+
+   h2 {
+  font-size: 2rem;
+  margin-bottom: 25px;
+  border-bottom: 3.5px solid var(--accent);
+  padding-left: 15px;
+  padding-bottom: 10px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+
+   .card {
+  background: var(--card);
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  border: 1px solid #222;
+  box-shadow: 0 2px 6px rgba(255, 215, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: fadeUp 0.8s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 10px 25px rgba(255, 215, 0, 0.2);
+  border-color: var(--accent);
+}
+
+@keyframes fadeUp {
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+
+    ul {
+      padding-left: 20px;
+    }
+    .badge {
+      display: inline-block;
+      background: var(--accent);
+      color: #000;
+      padding: 5px 10px;
+      margin: 5px 5px 0 0;
+      border-radius: 12px;
+      font-size: 0.85rem;
+      font-weight: bold;
+    }
+
+    .links a {
+      display: inline-block;
+      margin-right: 10px;
+      text-decoration: none;
+      color: var(--accent);
+      font-weight: 500;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #0f0f0f;
+      color: #777;
+      font-size: 0.9em;
+      margin-top: 30px;
+      border-top: 1px solid #222;
+    }
+    html {
+  scroll-padding-top: 80px; 
+}
+nav a.active {
+  color: var(--accent);
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 1.8em;
+  }
+
+  .social-links a {
+    display: block;
+    margin: 10px 0;
+    font-size: 0.95rem;
+  }
+
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+    font-size: 0.9rem;
+    padding: 10px;
+  }
+
+  nav a {
+    margin: 5px;
+  }
+
+  section {
+    padding: 0 12px;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+    padding-left: 10px;
+  }
+
+  .card {
+    padding: 15px;
+  }
+
+
+  .badge {
+    font-size: 0.75rem;
+    padding: 4px 8px;
+  }
+
+  .card p,
+  .card li {
+    font-size: 0.95rem;
+  }
+
+  footer {
+    font-size: 0.8rem;
+  }
+}
+
+
+  </style>
+</head>
+<body>
+
+<header>
+<h1>Hello, I'm Suvarna Yarramreddy</h1>
+  <div class="social-links">
+    <a href="https://www.linkedin.com/in/suvarna-yarramreddy-a19899256/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+    <a href="https://github.com/Suvarna-yarramreddy" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+    <a href="suvarna_resume.pdf" target="_blank" style="color: var(--accent); font-weight: 600; text-decoration: none;"><i class="fas fa-file-alt"></i> View My Resume</a>
+
+  </div>
+</header>
+
+<nav>
+  <a href="#about">About</a>
+  <a href="#education">Education</a>
+  <a href="#skills">Skills</a>
+  <a href="#projects">Projects</a>
+  <a href="#coding">Coding Profiles</a>
+  <a href="#certificates">Certificates</a>
+  <a href="#internships">Internships</a>
+  <a href="#achievements">Achievements</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+
+<section id="about">
+  <h2>🙋‍♀️ About Me</h2>
+  <div class="card">
+    <p>I'm a final-year B.Tech student at Shri Vishnu Engineering College for Women, specializing in Artificial Intelligence and Machine Learning.
+I enjoy building full-stack web applications that solve real-world problems.
+I regularly practice coding on platforms like LeetCode, HackerRank, and CodeChef to strengthen my problem-solving skills.
+I'm always eager to learn new technologies and work on projects that are practical, efficient, and impactful.</p>
+  </div>
+</section>
+
+<section id="education">
+  <h2>🎓 Education</h2>
+  <div class="card">
+    <ul>
+  <li>
+    <strong>B.Tech in Artificial Intelligence and Machine Learning</strong><br>
+    Shri Vishnu Engineering College for Women (2022 – 2026)<br>
+    <strong>CGPA:</strong> 9.35
+  </li>
+  <li>
+    <strong>Intermediate (MPC)</strong><br>
+    Oxford Junior College (2020 – 2022)<br>
+    <strong>Percentage:</strong> 96.9%
+  </li>
+  <li>
+    <strong>SSC</strong><br>
+    Andhra High School (2019 – 2020)<br>
+    <strong>Percentage:</strong> 95.6%
+  </li>
+</ul>
+
+  </div>
+</section>
+
+<section id="skills">
+ <h2>💡 Skills</h2>
+<div class="card">
+  <p><strong>Programming Languages:</strong></p>
+  <span class="badge">C</span>
+  <span class="badge">Java</span>
+  <span class="badge">Python</span>
+  <span class="badge">SQL</span>
+
+  <p style="margin-top: 15px;"><strong>Web Technologies:</strong></p>
+  <span class="badge">HTML</span>
+  <span class="badge">CSS</span>
+  <span class="badge">JavaScript</span>
+
+  <p style="margin-top: 15px;"><strong>Frameworks & Libraries:</strong></p>
+  <span class="badge">ReactJS</span>
+  <span class="badge">Node.js</span>
+  <span class="badge">Bootstrap</span>
+  <span class="badge">Pandas</span>
+  <span class="badge">NumPy</span>
+  <span class="badge">Matplotlib</span>
+
+  <p style="margin-top: 15px;"><strong>Tools:</strong></p>
+  <span class="badge">MySQL</span>
+  <span class="badge">Tableau</span>
+  <span class="badge">Git</span>
+
+  <p style="margin-top: 15px;"><strong>Platforms:</strong></p>
+  <span class="badge">Visual Studio Code</span>
+  <span class="badge">Google Colab</span>
+
+  <p style="margin-top: 15px;"><strong>Core Areas:</strong></p>
+  <span class="badge">Data Structures and Algorithms</span>
+  <span class="badge">Machine Learning</span>
+
+ 
+</div>
+
+</section>
+
+<section id="projects">
+  <h2>💼 Projects</h2>
+  <div class="card">
+    <div style="margin-bottom: 30px;">
+      <h3 style="margin-bottom: 8px;">🔹 Personal Portfolio Website</h3>
+      <a href="https://github.com/Suvarna-yarramreddy/portfolio" target="_blank" style="color: var(--accent); text-decoration: none;">🔗 View on GitHub</a>
+      <p style="margin-top: 10px;">
+        This is a personal portfolio website developed using HTML and CSS. It highlights my education, skills, projects, certificates, internships, and achievements in a clean and structured format. The design is responsive and easy to navigate, allowing visitors to quickly learn more about me. It also includes my contact details and links to my GitHub and LinkedIn profiles.
+      </p>
+      <p><strong>Tech Stack:</strong> HTML, CSS, JavaScript</p>
+    </div>
+
+    <div style="margin-bottom: 30px;">
+      <h3 style="margin-bottom: 8px;">🔹 Research and Development Portal</h3>
+      <a href="https://github.com/Suvarna-yarramreddy/RandD" target="_blank" style="color: var(--accent); text-decoration: none;">🔗 View on GitHub</a>
+      <p style="margin-top: 10px;">
+        This project is a centralized web portal designed to simplify and streamline faculty research management. It eliminates the need for manual tracking by allowing faculty to record and update their research activities in a unified system. With real-time database integration, the platform ensures consistency, accuracy, and instant access to research data. The entire solution was built using ReactJS for the frontend, Node.js and Express.js for the backend, styled with Bootstrap, and connected to a relational database using SQL Workbench.
+      </p>
+      <p><strong>Tech Stack:</strong> ReactJS, Node.js, Express.js, Bootstrap, SQL Workbench</p>
+    </div>
+
+    <div>
+      <h3 style="margin-bottom: 8px;">🔹 Emoji Prediction Using Deep Learning</h3>
+      <a href="https://github.com/Suvarna-yarramreddy/EmojiPrediction" target="_blank" style="color: var(--accent); text-decoration: none;">🔗 View on GitHub</a>
+      <p style="margin-top: 10px;">
+        This project involved developing an intelligent text classifier that predicts the most relevant emoji based on the input English sentence. Leveraging LSTM (Long Short-Term Memory) architecture, the model captures the contextual meaning of sentences. Pre-trained GloVe embeddings were integrated to enhance semantic understanding and improve prediction accuracy. The system was built using Python, Keras, and TensorFlow, and model performance was visualized with Matplotlib. This project highlights my interest in natural language processing and deep learning applications.
+      </p>
+      <p><strong>Tech Stack:</strong> Python, Keras, TensorFlow, Matplotlib, GloVe Embeddings</p>
+    </div>
+
+  </div>
+</section>
+
+
+
+<section id="coding">
+ <h2>💻 Coding Profiles</h2>
+  <div class="card">
+    <p>Explore my competitive programming and coding profiles:</p>
+
+    <div style="margin-top: 20px;">
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px; border-bottom: 1px solid #333; padding-bottom: 8px;">
+        <span><strong>LeetCode</strong></span>
+        <a href="https://leetcode.com/u/Suvarna_yarramreddy/" target="_blank" style="color: var(--accent); text-decoration: none; font-weight: 500;">
+          View Profile
+        </a>
+      </div>
+
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px; border-bottom: 1px solid #333; padding-bottom: 8px;">
+        <span><strong>HackerRank</strong></span>
+        <a href="https://www.hackerrank.com/profile/22b01a42c0" target="_blank" style="color: var(--accent); text-decoration: none; font-weight: 500;">
+          View Profile
+        </a>
+      </div>
+
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px; border-bottom: 1px solid #333; padding-bottom: 8px;">
+        <span><strong>CodeChef</strong></span>
+        <a href="https://www.codechef.com/users/suvarna_4" target="_blank" style="color: var(--accent); text-decoration: none; font-weight: 500;">
+          View Profile
+        </a>
+      </div>
+
+      <div style="display: flex; justify-content: space-between; align-items: center;">
+        <span><strong>InterviewBit</strong></span>
+        <a href="https://www.interviewbit.com/profile/suvarna-yarramreddy/" target="_blank" style="color: var(--accent); text-decoration: none; font-weight: 500;">
+          View Profile
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section id="certificates">
+  <h2>📜 Certificates</h2>
+  <div class="card">
+    <ul style="list-style: none; padding-left: 0;">
+      <li style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
+        <span>✅ Java Programming – NPTEL </span>
+        <a href="https://drive.google.com/file/d/1zw3ld-Li66zD6kW-FEp8R26rHUPcu64j/view" target="_blank" style="color: var(--accent); text-decoration: none;">View Certificate</a>
+      </li>
+      <li style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
+        <span>🏆 Smart Coder – Smart Interviews (Rank 2121 / 42693)</span>
+        <a href="https://drive.google.com/file/d/1ZbwTwEJeKWQCOkbyuZ8fzw7fk4II1Yve/view" target="_blank" style="color: var(--accent); text-decoration: none;">View Certificate</a>
+      </li>
+      <li style="display: flex; justify-content: space-between; align-items: center;">
+        <span>🗂️ Database Foundations – Oracle Academy</span>
+        <a href="https://drive.google.com/file/d/1z9JkhqE1R8DZnCna897iCAq0ZBjIjWn7/view" target="_blank" style="color: var(--accent); text-decoration: none;">View Certificate</a>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<section id="internships">
+  <h2>👩‍💼 Internships</h2>
+  <div class="card">
+    <ul>
+      <li><strong>Full Stack Intern – Skill Dzire:</strong> Developed dynamic web applications by integrating backend and frontend systems.
+Gained hands-on experience in Java and modern web technologies.</li>
+    </ul>
+  </div>
+</section>
+
+<section id="achievements">
+  <h2>🏅 Hackathons & Achievements</h2>
+  <div class="card">
+    <ul>
+      <li>
+        🏁 <strong>Google Developer Student Club Hackathon</strong><br>
+        Participated in a campus-level GDSC Hackathon. Built a project titled <em>"Information Hub"</em> — a web platform to explore company brands, job postings, and human rights.
+      </li>
+      <br>
+      <li>
+        🥇 <strong>LeetCode Global Contest Ranking</strong><br>
+        Ranked in the top <strong>14.02%</strong> among 692,597 users. Achieved a Contest Rating of <strong>1687</strong> with a Global Rank of <strong>94,777</strong> across 25 contests.
+      </li>
+    </ul>
+  </div>
+</section>
+<section id="contact">
+  <h2>📫 Contact</h2>
+  <div class="card">
+    <p>If you'd like to get in touch, feel free to reach out via email or connect with me on LinkedIn.</p>
+    <ul style="list-style: none; padding-left: 0; margin-top: 15px;">
+      <li><strong>Email:</strong> <a href="mailto:suvarnayarramreddy@gmail.com" style="color: var(--accent); text-decoration: none;">suvarnayarramreddy@gmail.com</a></li>
+      <li><strong>Phone:</strong> +91 9618740336</li>
+      <li><strong>Location:</strong> Andhra Pradesh, India</li>
+    </ul>
+  </div>
+</section>
+
+
+
+<footer>
+  &copy; 2025 Suvarna Yarramreddy. All rights reserved.
+</footer>
+
+<script>
+  const navLinks = document.querySelectorAll("nav a");
+  const sections = document.querySelectorAll("section");
+
+  window.addEventListener("scroll", () => {
+    let currentSectionId = "";
+
+    sections.forEach(section => {
+      const sectionTop = section.offsetTop - 100;
+      const sectionHeight = section.offsetHeight;
+
+      if (pageYOffset >= sectionTop && pageYOffset < sectionTop + sectionHeight) {
+        currentSectionId = section.getAttribute("id");
+      }
+    });
+    if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight - 5) {
+      currentSectionId = "contact";
+    }
+
+    navLinks.forEach(link => {
+      link.classList.remove("active");
+      if (link.getAttribute("href") === `#${currentSectionId}`) {
+        link.classList.add("active");
+      }
+    });
+  });
+  navLinks.forEach(link => {
+    link.addEventListener("click", function(e) {
+      e.preventDefault();
+      const targetId = this.getAttribute("href").slice(1);
+      const targetSection = document.getElementById(targetId);
+      const offsetTop = targetSection.offsetTop - 70;
+
+      window.scrollTo({
+        top: offsetTop,
+        behavior: "smooth"
+      });
+    });
+  });
+</script>
+
+
+</body>
+</html>
